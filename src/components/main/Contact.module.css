@@ -1,0 +1,115 @@
+.container {
+    background-color: #ffffff;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    gap: 4rem;
+}
+
+.infoSection {
+    flex: 1;
+    min-width: 300px;
+}
+
+.heading {
+    font-size: 3rem;
+    color: #121212;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.subText {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.phoneDisplay {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-left: 4px solid #121212;
+}
+
+.phoneDisplay span {
+    color: #555;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.phoneDisplay h3 {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.5rem;
+    color: #121212;
+}
+
+.formSection {
+    flex: 1.5;
+    min-width: 300px;
+    background: #fff;
+}
+
+.inputGroup {
+    margin-bottom: 1.5rem;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: left;
+}
+
+.required {
+    color: #d32f2f;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+    outline: none;
+    border-color: #121212;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submitBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.submitBtn:hover:not(:disabled) {
+    background-color: #333;
+}

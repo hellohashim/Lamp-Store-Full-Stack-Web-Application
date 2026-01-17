@@ -1,0 +1,46 @@
+.footer-nav-3-section
+{
+    background-color: #131A22;
+    padding: 2rem 0;
+
+}
+
+.footer-nav-3-row
+{
+    margin-top: 1.25rem;
+}
+
+
+.footer-nav-3-section-mob
+{
+    padding: 1.5rem 0;
+    background-color: #0f1111;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.footer-nav-3-section-mob a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-left: 0.3rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 576px)
+{
+    .footer-nav-3-section-mob
+    {
+        font-size: 1.35rem;
+    }
+
+    .footer-nav-3-section-mob a
+    {
+        font-size: 1.35rem;
+    }
+
+}
+    

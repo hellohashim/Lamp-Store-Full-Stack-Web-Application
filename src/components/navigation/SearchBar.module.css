@@ -1,0 +1,162 @@
+.nav-search-bar-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  min-width: 0;
+}
+
+.nav-search-bar {
+  border: 3px solid #0F1111;
+  border-radius: 7px;
+  display: flex;
+  overflow: visible; /* safe now */
+  height: 45px;
+  padding: 0;
+  background-color: white;
+  max-width: 690px !important;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.dropdown-menu {
+  z-index: 1050; /* make sure it’s above navbar */
+}
+
+.nav-search-bar .input-group {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  min-width: 0;
+}
+
+.nav-search-bar-text {
+  padding: 0 12px;
+  background-color: white;
+  color: black;
+  flex: 1;
+  width: 440px !important;
+  width: 100%;
+  min-width: 0;
+}
+
+.nav-search-bar-text::placeholder {
+  color: #727272;
+  font-size: 1.05rem;
+}
+
+.nav-search-bar-button {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 6px;
+  background-color: rgb(196, 197, 194);
+  flex-shrink: 0;
+}
+
+.nav-search-bar-button img {
+  color: black;
+  width: 1.2rem;
+}
+
+.nav-search-bar-text:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-search-bar:has(.nav-search-bar-text:focus) {
+  border-color: #febd69;
+}
+
+@media (max-width: 1271px) {
+  .nav-search-bar {
+    max-width: 1260px !important; 
+    width: 100%;
+    margin: 0 auto;
+    height: 3.7rem;
+    border-radius: 0.8rem;
+    margin-top: 0.75rem;
+    border: 0;
+  }
+  
+  .search-bar-group .dropdown-toggle
+  {
+    display: none;
+  }
+
+  .search-bar-group .nav-search-bar-text
+  {
+      flex: 1 1 auto !important;
+      width: auto !important;
+      min-width: 0 !important;
+      font-size: 1.5rem;
+      font-weight: 500;
+  }
+
+  .nav-search-bar-text::placeholder 
+  {
+    font-size: 1.5rem;
+  }
+
+  .nav-search-bar-button img
+  {
+    width: 1.8rem;
+  }
+
+  .nav-search-bar-button
+  {
+     border-top-left-radius: 0.6rem !important;
+     border-bottom-left-radius: 0.6rem !important;
+     width: 4.3rem;
+  }
+}
+
+/* Positioning for the dropdown container */
+.nav-search-bar {
+  position: relative; /* This is the "anchor" for the suggestions */
+}
+
+.search-results-dropdown {
+  position: absolute;
+  top: 100%; /* Places it directly under the bar */
+  left: 0;
+  width: 100%;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 9999;
+  border: 1px solid #ccc;
+  border-top: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.result-item {
+  padding: 12px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  color: #0F1111 !important; /* Forces black text */
+  text-align: left;
+  font-size: 0.95rem;
+  background-color: white;
+  transition: background-color 0.2s;
+}
+
+.result-item:hover {
+  background-color: #f3f3f3;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+/* Ensure suggestions look good on mobile */
+@media (max-width: 1271px) {
+  .search-results-dropdown {
+    width: 95%;
+    left: 2.5%;
+    border-radius: 0.8rem;
+    margin-top: 2px;
+  }
+}

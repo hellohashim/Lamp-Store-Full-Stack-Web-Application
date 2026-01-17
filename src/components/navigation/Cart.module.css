@@ -1,0 +1,40 @@
+/* Cart-icon-link */
+.nav-cart-icon
+{
+    margin-left: 0px;
+    margin-top: 2px;
+    width: 39px;
+}
+
+.nav-cart-text
+{
+    margin-top: 21px;
+}
+
+/* Number's position set to absolute, placing it to top left of its parent and then setting the margins from there */
+#nav-cart-items-number
+{
+    color: #F08804;
+    font-size: 1.12rem;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 18px;
+    margin-top: -4px;
+}
+
+@media (max-width: 1271px) 
+{
+    .nav-cart-icon
+    {
+        margin-right: 1rem;
+        width: 3rem;
+    }
+
+    #nav-cart-items-number
+    {
+        font-size: 1.5rem;
+        margin-left: 1.32rem;
+        margin-top: -0.6rem;
+    }
+
+}

@@ -1,0 +1,14 @@
+.horizontal-line
+{
+    height: 1px;
+    background-color: rgba(98, 102, 111, 0.65);
+}
+
+
+@media (max-width: 1271px)
+{
+    .horizontal-line
+    {
+        display: none;
+    }
+}

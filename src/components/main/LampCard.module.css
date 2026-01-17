@@ -1,0 +1,81 @@
+.card {
+  flex: 0 0 auto;
+  width: 170px;
+  margin-right: 15px;
+  background: white;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+/* 🔑 This makes the entire card clickable */
+.cardLink {
+  position: absolute;
+  inset: 0;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Content stays ABOVE background but BELOW link */
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  margin-bottom: 8px;
+}
+
+.lampImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.info {
+  padding: 0 2px;
+}
+
+.title {
+  color: #0F1111;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 4px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rsSymbol {
+  font-size: 0.75rem;
+  color: #0F1111;
+  font-weight: 500;
+}
+
+.mainPrice {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #0F1111;
+}
+
+.strikePrice {
+  font-size: 0.85rem;
+  color: #565959;
+  text-decoration: line-through;
+  margin-left: 4px;
+}

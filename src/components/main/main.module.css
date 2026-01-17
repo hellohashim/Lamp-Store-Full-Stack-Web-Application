@@ -1,0 +1,56 @@
+.mainContainer {
+  padding: 0 20px 40px 20px;
+  background-color: #fff;
+}
+
+.hero {
+  margin-bottom: 25px;
+  margin-left: 0;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.rowSection {
+  margin-bottom: 30px;
+}
+
+.header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0F1111;
+  margin: 0;
+}
+
+.seeMore {
+  color: #007185; /* Amazon blue link color */
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.seeMore:hover {
+  text-decoration: underline;
+  color: #C7511F; /* Amazon link hover color */
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}

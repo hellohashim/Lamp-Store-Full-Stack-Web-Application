@@ -1,0 +1,107 @@
+.footer-nav-2-section
+{
+    gap: 5rem;
+    padding: 2rem;
+}
+
+.footer-nav-2-logo-container img
+{
+    width: 5.2rem;
+}
+
+.footer-nav-2-ul
+{
+    list-style: none;
+    padding: 0;
+}
+.footer-nav-2-li a
+{
+    text-decoration: none;
+    color: #ffffffbe;
+    font-size: 0.85rem;
+    border: 1px solid #ffffff80;
+    border-radius: 0.3rem;
+    width: 9.17rem;
+    padding: 0.4rem 0.6rem;
+}
+
+.footer-nav-2-ul-imgs
+{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.footer-nav2-currency-symbol, .footer-nav2-flag-icon
+{
+    margin-right: 0.5rem;
+}
+
+.footer-nav-2-world-symbol
+{
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.footer-nav-2-dropdown-arrows
+{
+    margin-right: 0.3rem;
+}
+
+
+@media (max-width: 1271px)
+{
+    .hide-on-mobile
+    {
+        display: none;
+    }
+
+    .footer-nav-2-section
+    {
+        background-color: #0F1111;
+        padding-bottom: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .footer-nav-2-ul-imgs
+    {
+        width: 1rem;
+        height: 1rem;
+    }
+    .footer-nav-2-li a
+    {
+        border: none;
+        font-size: 1rem;
+        width: 12rem;
+    }
+
+    .footer-nav-2-li .footer-nav-2-li1-a
+    {
+        width: 8rem;
+    }
+}
+
+@media (max-width: 576px)
+{
+    .footer-nav-2-ul
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-nav-2-ul-imgs
+    {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    
+    .footer-nav-2-li a
+    {
+        font-size: 1.5rem;
+        width: 14rem;
+    }
+
+    .footer-nav-2-li .footer-nav-2-li1-a
+    {
+        width: 10rem;
+    }
+}
